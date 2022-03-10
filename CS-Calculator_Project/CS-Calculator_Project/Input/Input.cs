@@ -49,7 +49,7 @@ namespace CS_Calculator.Input
                 {
                     continue;
                 }
-                Console.WriteLine("Fak");
+                
             }
         }
     }
