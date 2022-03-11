@@ -1,15 +1,17 @@
-﻿using CS_Calculator.Functions;
+﻿using CS_Calculator_Project.Methods;
 
-namespace CS_Calculator.Input
+namespace CS_Calculator_Project.Input
 {
     public class Input
     {
         public static void Main(string[] args)
         {
+            Options.Summary();
 
             while (true)
             {
-                Console.Write("Enter 1st value:");
+               
+                Console.Write("\nEnter 1st value: ");
                 string valueA = Console.ReadLine().Trim();
                 if (string.IsNullOrEmpty(valueA))
                 {
@@ -18,7 +20,7 @@ namespace CS_Calculator.Input
                 }
                 MathOperators.ValueA = Convert.ToDouble(valueA);
 
-                Console.Write("Enter the operator:");
+                Console.Write("\nEnter the operator: ");
                 string input = Console.ReadLine();
                 if (input == null)
                 {
@@ -26,7 +28,7 @@ namespace CS_Calculator.Input
                     return;
                 }
 
-                Console.Write("Enter 2nd value:");
+                Console.Write("\nEnter 2nd value: ");
                 string valueB = Console.ReadLine().Trim();
 
                 if (string.IsNullOrEmpty(valueB))
@@ -39,9 +41,9 @@ namespace CS_Calculator.Input
 
                 Console.WriteLine(MathOperators.Operators(input));
 
-                Console.WriteLine("Do you want to continue?");
+                Console.WriteLine("\nDo you want to continue?");
                 string answer = Console.ReadLine().ToLower().Trim();
-                if (answer == "no" || string.IsNullOrEmpty(answer))
+                if (answer == "no")
                 {
                     return;
                 }
@@ -50,6 +52,12 @@ namespace CS_Calculator.Input
                     continue;
                 }
                 
+                else if (answer != "no" || answer != "yes" || string.IsNullOrEmpty(answer))
+                {
+                    Console.WriteLine("\nInvalid Response, exiting the program.");
+                    return;
+                }
+
             }
         }
     }

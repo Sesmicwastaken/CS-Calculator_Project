@@ -1,0 +1,15 @@
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\bin\Debug\net6.0\CS-Calculator_Project.exe
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\bin\Debug\net6.0\CS-Calculator_Project.deps.json
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\bin\Debug\net6.0\CS-Calculator_Project.runtimeconfig.json
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\bin\Debug\net6.0\CS-Calculator_Project.dll
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\bin\Debug\net6.0\CS-Calculator_Project.pdb
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.csproj.AssemblyReference.cache
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.AssemblyInfoInputs.cache
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.AssemblyInfo.cs
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.csproj.CoreCompileInputs.cache
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.dll
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\refint\CS-Calculator_Project.dll
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.pdb
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\CS-Calculator_Project.genruntimeconfig.cache
+C:\Users\Sesmic\CS-Calculator-Project\CS-Calculator_Project\CS-Calculator_Project\obj\Debug\net6.0\ref\CS-Calculator_Project.dll
