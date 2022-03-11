@@ -2,8 +2,8 @@
 {
     public class MathOperators
     {
-        public static double ValueA, ValueB;
-        public static double temp = 0;
+        internal static double ValueA, ValueB;
+        internal static double temp = 0;
         public static string Operators(string input)
 
         {
