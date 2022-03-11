@@ -3,7 +3,7 @@
     public class MathOperators
     {
         internal static double ValueA, ValueB;
-        internal static double temp = 0;
+     
         public static string Operators(string input)
 
         {
@@ -29,7 +29,7 @@
                     break;
 
             }
-             temp = output;
+            Options.temp = output;
             return "The answer is: " + output;
         }
     }

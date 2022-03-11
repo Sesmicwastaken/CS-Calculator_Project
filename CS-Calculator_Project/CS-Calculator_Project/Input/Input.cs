@@ -6,11 +6,11 @@ namespace CS_Calculator_Project.Input
     {
         public static void Main(string[] args)
         {
-            Options.Summary();
+           
 
             while (true)
             {
-               
+                Options.Summary();
                 Console.Write("\nEnter 1st value: ");
                 string valueA = Console.ReadLine().Trim();
                 if (string.IsNullOrEmpty(valueA))
@@ -49,6 +49,7 @@ namespace CS_Calculator_Project.Input
                 }
                 else if (answer == "yes")
                 {
+                    Console.Clear();
                     continue;
                 }
                 
