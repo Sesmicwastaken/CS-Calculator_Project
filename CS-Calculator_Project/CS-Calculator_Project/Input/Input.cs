@@ -6,32 +6,45 @@ namespace CS_Calculator_Project.Input
     {
         public static void Main(string[] args)
         {
-           
+
+            Options.Summary();
+
+            Console.Write("\nValue: ");
+            string valueA = Console.ReadLine().Trim();
+
+            if (string.IsNullOrEmpty(valueA))
+            {
+                Console.WriteLine("Value cannot be null.");
+                return;
+            }           
+            
+            else if (valueA.ToLower() == "exit")
+            {
+                Console.WriteLine("\nExiting the program...");
+                return;
+            }
+            try { MathOperators.ValueA = Convert.ToDouble(valueA); }
+            catch { throw new Exception("Invalid input"); }
 
             while (true)
             {
-                Options.Summary();
-                Console.Write("\nEnter 1st value: ");
-                string valueA = Console.ReadLine().Trim();
-                if (string.IsNullOrEmpty(valueA))
-                {
-                    Console.WriteLine("Value cannot be null.");
-                    return;
-                }
                
-                try { MathOperators.ValueA = Convert.ToDouble(valueA);}
-                catch { throw new Exception("Invalid input"); }
 
-                Console.Write("\nEnter the operator: ");
-
+                Console.Write("\nOperator: ");
                 string input = Console.ReadLine();
+
                 if (string.IsNullOrEmpty(input))
                 {
                     Console.WriteLine("Operator cannot be null");
                     return;
                 }
-
-                Console.Write("\nEnter 2nd value: ");
+                
+                else if (input.ToLower() == "exit")
+                {
+                    Console.WriteLine("\nExiting the program...");
+                    return;
+                }
+                Console.Write("\nAnother Value: ");
                 string valueB = Console.ReadLine().Trim();
 
                 if (string.IsNullOrEmpty(valueB))
@@ -39,29 +52,28 @@ namespace CS_Calculator_Project.Input
                     Console.WriteLine("Value cannot be null.");
                     return;
                 }
-
+                else if (valueB.ToLower() == "exit")
+                {
+                    Console.WriteLine("\nExiting the program...");
+                    return;
+                }
                 try { MathOperators.ValueB = Convert.ToDouble(valueB); }
                 catch { throw new Exception("Invalid input"); }
 
-                Console.WriteLine(MathOperators.Operators(input));
-
-                Console.WriteLine("\nDo you want to continue?");
-                string answer = Console.ReadLine().ToLower().Trim();
-                if (answer == "no")
+                MathOperators.Operators(input);
+                try
                 {
+                    Console.WriteLine("\nLast Value: " + MathOperators.Values[0]);
+                    MathOperators.ValueA = MathOperators.Values[0];
+                }
+                catch 
+                {
+                    throw new Exception("\nUnfortunately the program crashed");
+                    Console.WriteLine();
                     return;
                 }
-                else if (answer == "yes")
-                {
-                    Console.Clear();
-                    continue;
-                }
-                
-                else if (answer != "no" || answer != "yes" || string.IsNullOrEmpty(answer))
-                {
-                    Console.WriteLine("\nInvalid Response, exiting the program.");
-                    return;
-                }
+                MathOperators.Values.Clear();
+                continue;
 
             }
         }
