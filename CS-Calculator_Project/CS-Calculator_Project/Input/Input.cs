@@ -18,11 +18,14 @@ namespace CS_Calculator_Project.Input
                     Console.WriteLine("Value cannot be null.");
                     return;
                 }
-                MathOperators.ValueA = Convert.ToDouble(valueA);
+               
+                try { MathOperators.ValueA = Convert.ToDouble(valueA);}
+                catch { throw new Exception("Invalid input"); }
 
                 Console.Write("\nEnter the operator: ");
+
                 string input = Console.ReadLine();
-                if (input == null)
+                if (string.IsNullOrEmpty(input))
                 {
                     Console.WriteLine("Operator cannot be null");
                     return;
@@ -37,7 +40,8 @@ namespace CS_Calculator_Project.Input
                     return;
                 }
 
-                MathOperators.ValueB = Convert.ToDouble(valueB);
+                try { MathOperators.ValueB = Convert.ToDouble(valueB); }
+                catch { throw new Exception("Invalid input"); }
 
                 Console.WriteLine(MathOperators.Operators(input));
 

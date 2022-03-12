@@ -3,11 +3,11 @@
     public class MathOperators
     {
         internal static double ValueA, ValueB;
-     
+
         public static string Operators(string input)
 
         {
-            
+           
             double output = 0;
             string Operator = input.Trim();
             switch (Operator)
