@@ -5,12 +5,12 @@
         internal static double ValueA, ValueB;
         internal static List<double> Values = new();
         internal static double output = 0;
-        private static string[] operators = new string[] { "+", "-", "/", "*", "^" };
+        private static string[] operators = new string[] { "+", "-", "/", "*", "^", "~", "%" };
         public static void Operators(string input)
 
         {
             if (!operators.Contains(input))
-            { 
+            {
                 return;
             }
 
@@ -33,7 +33,12 @@
                 case "^":
                     output = Math.Pow(ValueA, ValueB);
                     break;
-
+                case "~":
+                    output = Math.Sqrt(ValueA);
+                    break;
+                case "%":
+                    output = (ValueA / 100);
+                    break;
             }
 
             Values.Add(output);

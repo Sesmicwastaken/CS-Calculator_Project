@@ -38,7 +38,23 @@ namespace CS_Calculator_Project.Input
                     Console.WriteLine("Operator cannot be null");
                     return;
                 }
-                
+                else if (input.ToLower() == "%")
+                {
+                    MathOperators.Operators(input);
+                    Console.WriteLine("\nLast Value: " + MathOperators.Values[0]);
+                    MathOperators.ValueA = MathOperators.Values[0];
+                    MathOperators.Values.Clear();
+                    continue;
+                }
+                else if (input.ToLower() == "~")
+                {
+                    MathOperators.Operators(input);
+                    Console.WriteLine("\nLast Value: " + MathOperators.Values[0]);
+                    MathOperators.ValueA = MathOperators.Values[0];
+                    MathOperators.Values.Clear();
+                    continue;
+                }
+
                 else if (input.ToLower() == "exit")
                 {
                     Console.WriteLine("\nExiting the program...");

@@ -9,7 +9,7 @@ namespace CS_Calculator_Project.Methods
         {
             StringBuilder Summary = new();
             Summary.Append("Following operations are supported:").AppendLine("\n");
-            Summary.Append("Addition: '+'").AppendLine().Append("Substraction: '-'").AppendLine().Append("Multiplication: '*'").AppendLine().Append("Division: '/'").AppendLine().Append("Power: '^'").AppendLine("\n");
+            Summary.Append("Addition: '+'").AppendLine().Append("Substraction: '-'").AppendLine().Append("Multiplication: '*'").AppendLine().Append("Division: '/'").AppendLine().Append("Power: '^'").Append("Percentage: '%'").AppendLine().Append("Square root: '~'").AppendLine("\n");
             Summary.Append("Note: The 2nd value that you will enter after using the power operator will act as the power of the 1st number.").AppendLine("\n");
             Summary.Append("You can type \"exit\" to exit the program.").AppendLine();
            
